@@ -1,0 +1,46 @@
+<resources>
+    <string name="app_name">Vaidya</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="addbutton">Add Reports</string>
+    <string name="selectrep">Select</string>
+    <string name="action_settings">Settings</string>
+    <string-array name="blood_arrays">
+        <item>O+</item>
+        <item>A+</item>
+        <item>B+</item>
+        <item>AB+</item>
+        <item>AB-</item>
+        <item>O-</item>
+    </string-array>
+
+
+    <string-array name="orgnization_city">
+        <item>Ahmedabad</item>
+        <item>Bangalore</item>
+        <item>Chennai</item>
+        <item>Delhi</item>
+        <item>Hyderabad</item>
+        <item>Mumbai</item>
+        <item>Pune</item>
+    </string-array>
+
+    <string-array name="status_arrays">
+        <item>Active</item>
+        <item>InActive</item>
+    </string-array>
+
+
+
+
+    <string name="title_activity_my_reports">MyReports</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="title_activity_list_report">My Reports</string>
+    <string name="title_activity_main_window">Vaidya</string>
+    <string name="title_activity_blood_bank">Blood Bank</string>
+    <string name="title_activity_medical_center">Hospitals near me</string>
+    <string name="title_activity_org_register">OrgRegister</string>
+    <string name="title_activity_donor_profile">Profile</string>
+    <string name="title_activity_check">Login as</string>
+</resources>

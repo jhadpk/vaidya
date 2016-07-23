@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:background="#fff7fffd"
+    android:id="@+id/contactdonor">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="30dp"
+    android:orientation="horizontal"
+    android:layout_marginTop="50dp">
+    <TextView
+        android:layout_width="75dp"
+        android:layout_height="30dp"
+        android:textSize="20dp"
+        android:layout_marginLeft="20dp"
+        android:text="Name : "
+        android:id="@+id/namelabel" />
+    <TextView
+        android:layout_width="250dp"
+        android:layout_height="30dp"
+        android:textSize="20dp"
+        android:id="@+id/name" />
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="15dp">
+        <TextView
+            android:layout_width="75dp"
+            android:layout_height="30dp"
+            android:textSize="20dp"
+            android:layout_marginLeft="20dp"
+            android:text="Blood : "
+            android:id="@+id/bloodgplabel" />
+        <TextView
+            android:layout_width="250dp"
+            android:layout_height="30dp"
+            android:textSize="20dp"
+            android:id="@+id/bloodgp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="15dp">
+        <TextView
+            android:layout_width="75dp"
+            android:layout_height="30dp"
+            android:textSize="20dp"
+            android:layout_marginLeft="20dp"
+            android:text="Phone : "
+            android:id="@+id/phonelabel" />
+        <TextView
+            android:layout_width="250dp"
+            android:layout_height="30dp"
+            android:textSize="20dp"
+            android:id="@+id/phone" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="15dp"
+        android:textAlignment="center">
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:textSize="20dp"
+            android:text="Contact Donor"
+            android:id="@+id/contact"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="#ffffc400" />
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="25dp">
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:textSize="20dp"
+            android:layout_marginLeft="20dp"
+            android:text="Address : "
+            android:id="@+id/addresslabel" />
+        <TextView
+            android:layout_width="250dp"
+            android:layout_height="100dp"
+            android:textSize="20dp"
+            android:id="@+id/address" />
+    </LinearLayout>
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="I have an uber account"
+        android:id="@+id/radioButton"
+        android:layout_gravity="center_horizontal"
+        android:checked="true"
+        android:layout_marginLeft="-80dp"/>
+
+    <LinearLayout android:id="@+id/uberlayout"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:paddingBottom="5dip"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="80dp">
+        <ImageView android:src="@drawable/uberpng1"
+            android:layout_width="100dp"
+            android:layout_height="70dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:textSize="25dp"
+            android:text="Book Uber"
+            android:id="@+id/ubertxt"
+            android:textColor="#ff000000" />
+    </LinearLayout>
+
+</LinearLayout>

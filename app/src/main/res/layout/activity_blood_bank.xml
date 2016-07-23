@@ -1,0 +1,57 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BloodBankNew">
+
+    <!--fragment
+        android:id="@+id/map"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        //android:name="com.google.android.gms.maps.SupportMapFragment"
+        class="android.support.v4.app.Fragment"/-->
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dip">
+
+        <TextView
+            android:id="@+id/reg_blood"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Blood Group"
+            android:textColor="#ff000000"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/blood"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/blood_arrays"
+            android:spinnerMode="dropdown" />
+
+
+        <Button
+            android:id="@+id/bloodNeed"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dip"
+            android:text="Search"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/bradcast"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dip"
+            android:text="Broadcast"
+            android:visibility="gone"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:background="#ff000000">
+
+
+    <LinearLayout android:id="@+id/header"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="5dip"
+        android:paddingBottom="5dip">
+        <ImageView android:src="@drawable/morph"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="120dip"
+            android:layout_marginTop="50dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="45dp"
+        android:weightSum="1">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Thanks for coming forward"
+        android:textSize="24dp"
+        android:id="@+id/thanks"
+        android:textColor="#ffeb2100" />
+    </LinearLayout>
+
+    <LinearLayout android:id="@+id/uber"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:paddingBottom="5dip"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="60dp">
+        <ImageView android:src="@drawable/uberpng1"
+            android:layout_width="100dp"
+            android:layout_height="70dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:textSize="25dp"
+            android:text="Book Uber"
+            android:id="@+id/ubertxt"
+            android:textColor="#ffa9a9a9" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/share"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Share ..."
+        android:textSize="30dp"
+        android:textColorLink="#ff1afff3"
+        android:textColor="#ff00aeff"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50dp" />
+
+</LinearLayout>

@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.inmobi.app.bloodbank" >
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <!-- <uses-feature android:name="android.hardware.camera" /> -->
+    <!-- <uses-feature android:name="android.hardware.camera" android:required="false" /> -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="com.google.android.gms.permission.ACTIVITY_RECOGNITION"/>
+    <uses-permission android:name="android.permission.READ_CALENDAR"/>
+    <uses-permission android:name="android.permission.WRITE_CALENDAR"/>
+
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="com.inmobi.app.permission.C2D_MESSAGE" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+
+
+    <meta-data
+        android:name="onMessageOpen"
+        android:value="com.inmobi.app.Splash" />
+
+
+
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+
+    <!--
+      IMPORTANT: Change "com.parse.tutorials.pushnotifications.permission.C2D_MESSAGE" in the lines below
+      to match your app's package name + ".permission.C2D_MESSAGE".
+    -->
+    <permission android:protectionLevel="signature"
+        android:name="com.inmobi.app.permission.C2D_MESSAGE" />
+    <uses-permission android:name="com.parse.tutorials.pushnotifications.permission.C2D_MESSAGE" />
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/morph"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".Login"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".Register"
+            android:label="Register New Account" />
+        <activity
+            android:name=".Notification"
+            android:label="Help" />
+        <activity
+            android:name=".Thanks"
+            android:label="Thanks" />
+        <!--activity
+            android:name="com.inmobi.app.myreports.MyReports"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_my_reports"
+            android:theme="@style/FullscreenTheme" >
+        </activity>
+        <activity
+            android:name="com.inmobi.app.reports.MyReports"
+            android:label="@string/title_activity_my_reports" >
+        </activity-->
+        <activity
+            android:name="com.inmobi.app.reports.ListReportActivity"
+            android:label="@string/title_activity_list_report" >
+        </activity>
+
+
+        <provider
+            android:name="com.inmobi.app.utils.MyReportsContentProvider"
+            android:authorities="com.inmobi.app.utilsreport"
+            android:enabled="true"
+            android:exported="true" />
+        <activity
+            android:name="com.inmobi.app.Splash"
+            android:label="@string/title_activity_main_window" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.inmobi.app.MainWindowActivity"
+            android:label="@string/title_activity_main_window" >
+        </activity>
+        <activity
+            android:name=".BloodBankNew"
+            android:label="@string/title_activity_blood_bank" >
+        </activity>
+        <activity
+            android:name=".BloodBank"
+            android:label="@string/title_activity_blood_bank" >
+        </activity>
+        <activity
+            android:name=".Check"
+            android:label="@string/title_activity_check" >
+        </activity>
+        <activity
+            android:name=".ContactHelp"
+            android:label="@string/title_activity_blood_bank" >
+        </activity>
+        <activity
+            android:name="com.inmobi.app.medicalcenters.GoogleHospitalsActivity"
+            android:label="@string/title_activity_medical_center" >
+        </activity>
+        <activity android:name="com.inmobi.androidsdk.IMBrowserActivity"
+            android:configChanges="keyboardHidden|orientation|keyboard|smallestScreenSize|screenSize"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:hardwareAccelerated="true" />
+
+
+        <service android:name="com.parse.PushService" />
+        <receiver android:name="com.parse.ParseBroadcastReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.USER_PRESENT" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.parse.GcmBroadcastReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+
+                <!--
+                  IMPORTANT: Change "com.parse.tutorials.pushnotifications" to match your app's package name.
+                -->
+                <category android:name="com.inmobi.app" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.inmobi.app.bloodbank.ParseReceiver" android:exported="false">
+            <intent-filter>
+                <action android:name="com.parse.push.intent.RECEIVE" />
+                <action android:name="com.parse.push.intent.DELETE" />
+                <action android:name="com.parse.push.intent.OPEN" />
+            </intent-filter>
+        </receiver>
+
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyDyiNoDWj3y0Z7nqvQjbQu9yYRxx_AUdAM" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity
+            android:name=".OrgRegister"
+            android:label="@string/title_activity_org_register" >
+        </activity>
+        <activity
+            android:name="com.inmobi.app.user.DonorProfile"
+            android:label="@string/title_activity_donor_profile" >
+        </activity>
+    </application>
+
+</manifest>

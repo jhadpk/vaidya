@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff6f9ff"
+    android:id="@+id/notification">
+    <ImageView android:src="@drawable/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:background="#19D1FF"/>
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="I don&apos;t have flu"
+        android:id="@+id/flu"
+        android:checked="false" 
+        android:textSize="20dp"
+        android:layout_marginTop="20dp"/>
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="I am not pregnant"
+        android:id="@+id/pregnantcheck"
+        android:checked="false"
+        android:textSize="20dp"
+        android:layout_marginTop="8dp"/>
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Not a diabetes patient"
+        android:id="@+id/diabetes"
+        android:checked="false"
+        android:textSize="20dp"
+        android:layout_marginTop="8dp"/>
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Don&apos;t have any cancer"
+        android:id="@+id/cancer"
+        android:checked="false"
+        android:textSize="20dp"
+        android:layout_marginTop="8dp"/>
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Last surgery was before 5 years"
+        android:id="@+id/surgery"
+        android:checked="false"
+        android:textSize="20dp"
+        android:layout_marginTop="8dp"/>
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Didnt have malaria in last 12 months"
+        android:id="@+id/malaria"
+        android:checked="false"
+        android:textSize="20dp"
+        android:layout_marginTop="8dp"/>
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Not on antibiotics"
+        android:id="@+id/antibiotics"
+        android:checked="false"
+        android:textSize="20dp"
+        android:layout_marginTop="8dp"/>
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Not in active military service"
+        android:id="@+id/military"
+        android:checked="false"
+        android:textSize="20dp"
+        android:layout_marginTop="8dp"/>
+<LinearLayout
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="Reject"
+        android:id="@+id/reject"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="35dp"
+        android:background="#b3ff0013" />
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="Accept"
+        android:id="@+id/accept"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="15dp"
+        android:visibility="invisible"
+        android:background="#b000ff31" />
+</LinearLayout>
+</LinearLayout>
+
